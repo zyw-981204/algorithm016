@@ -12,9 +12,11 @@
 var moveZeroes = function(nums) {
     let i = 0,
         j = 0
-    for (; i < nums.length; i++) {
-        let curVal = nums[i]
-        if (curVal)[nums[j++], nums[i]] = [nums[i], nums[j]]
+    while (i < nums.length) {
+        if (nums[i]) {
+            [nums[i], nums[j++]] = [nums[j], nums[i]]
+        }
+        i++
     }
 };
 // @lc code=end
