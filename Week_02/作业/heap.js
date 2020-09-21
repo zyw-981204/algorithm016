@@ -1,8 +1,8 @@
 /**
-* @name Heap
-* @author Zhao Yanwei
-* @createdTime 2020-09-20
-*/
+ * @name Heap
+ * @author Zhao Yanwei
+ * @createdTime 2020-09-20
+ */
 
 class Heap {
   constructor (isMin) {
@@ -40,7 +40,7 @@ class Heap {
   }
 
   insert (val) {
-    if (val) {
+    if (val !== null) {
       this.heap.push(val)
       this.shiftUp(this.heap.length - 1)
       return true
